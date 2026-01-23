@@ -154,3 +154,119 @@
 .hover-lift:hover {
   transform: translateY(-2px);
 }
+
+/* ===== LIGHT MODE TEXTURE PATTERNS ===== */
+
+/* Dot pattern - subtle dots scattered across backgrounds */
+.dot-pattern {
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.dark .dot-pattern {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Fine dot pattern - smaller, denser dots */
+.dot-pattern-fine {
+  background-image: radial-gradient(circle, rgba(0, 0, 0, 0.03) 0.5px, transparent 0.5px);
+  background-size: 12px 12px;
+}
+
+.dark .dot-pattern-fine {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.02) 0.5px, transparent 0.5px);
+}
+
+/* Crosshatch line pattern */
+.line-pattern {
+  background-image:
+    linear-gradient(0deg, transparent 24%, rgba(0, 0, 0, 0.02) 25%, rgba(0, 0, 0, 0.02) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.02) 75%, rgba(0, 0, 0, 0.02) 76%, transparent 77%),
+    linear-gradient(90deg, transparent 24%, rgba(0, 0, 0, 0.02) 25%, rgba(0, 0, 0, 0.02) 26%, transparent 27%, transparent 74%, rgba(0, 0, 0, 0.02) 75%, rgba(0, 0, 0, 0.02) 76%, transparent 77%);
+  background-size: 60px 60px;
+}
+
+.dark .line-pattern {
+  background-image:
+    linear-gradient(0deg, transparent 24%, rgba(255, 255, 255, 0.015) 25%, rgba(255, 255, 255, 0.015) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.015) 75%, rgba(255, 255, 255, 0.015) 76%, transparent 77%),
+    linear-gradient(90deg, transparent 24%, rgba(255, 255, 255, 0.015) 25%, rgba(255, 255, 255, 0.015) 26%, transparent 27%, transparent 74%, rgba(255, 255, 255, 0.015) 75%, rgba(255, 255, 255, 0.015) 76%, transparent 77%);
+  background-size: 60px 60px;
+}
+
+/* Horizontal lines only */
+.horizontal-lines {
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 39px,
+    rgba(0, 0, 0, 0.03) 39px,
+    rgba(0, 0, 0, 0.03) 40px
+  );
+}
+
+.dark .horizontal-lines {
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 39px,
+    rgba(255, 255, 255, 0.02) 39px,
+    rgba(255, 255, 255, 0.02) 40px
+  );
+}
+
+/* Subtle gradient overlays for light mode */
+.gradient-subtle-top {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.015) 0%, transparent 30%);
+}
+
+.dark .gradient-subtle-top {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 30%);
+}
+
+.gradient-subtle-bottom {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.015) 0%, transparent 30%);
+}
+
+.dark .gradient-subtle-bottom {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, transparent 30%);
+}
+
+/* Radial gradient - adds depth from center */
+.gradient-radial-soft {
+  background: radial-gradient(ellipse at 50% 0%, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
+}
+
+.dark .gradient-radial-soft {
+  background: radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+}
+
+/* Combined texture: dots + subtle gradient */
+.texture-soft {
+  background-image:
+    radial-gradient(circle, rgba(0, 0, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.01) 0%, transparent 50%, rgba(0, 0, 0, 0.01) 100%);
+  background-size: 20px 20px, 100% 100%;
+}
+
+.dark .texture-soft {
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.01) 0%, transparent 50%, rgba(255, 255, 255, 0.01) 100%);
+  background-size: 20px 20px, 100% 100%;
+}
+
+/* Noise-like texture using multiple dot layers */
+.texture-noise {
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.015) 1px, transparent 1px);
+  background-size: 32px 32px, 32px 32px, 16px 16px;
+}
+
+.dark .texture-noise {
+  background-image:
+    radial-gradient(circle at 25% 25%, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    radial-gradient(circle at 75% 75%, rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+  background-size: 32px 32px, 32px 32px, 16px 16px;
+}

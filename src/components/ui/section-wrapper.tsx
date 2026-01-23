@@ -30,9 +30,11 @@ export function SectionWrapper({
 }: SectionWrapperProps) {
     return (
         <section id={id} className={cn("relative", className)}>
-            {/* Top Divider */}
+            {/* Top Divider with gradient fade */}
             {showDivider && (
-                <div className="h-px bg-black/5 dark:bg-white/10" />
+                <div className="relative h-px">
+                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-black/10 dark:via-white/10 to-transparent" />
+                </div>
             )}
 
             {/* 3-Column Grid Layout */}
@@ -55,9 +57,12 @@ export function SectionWrapper({
 
                 {/* Main Content */}
                 <div className="relative">
+                    {/* Subtle line texture for light mode */}
+                    <div className="absolute inset-0 line-pattern opacity-50 pointer-events-none" aria-hidden="true" />
+
                     {/* Mobile Label */}
                     {label && (
-                        <div className="md:hidden px-4 pt-6">
+                        <div className="md:hidden px-4 pt-6 relative">
                             <p
                                 className={cn(
                                     "font-mono text-xs font-semibold tracking-widest uppercase",
@@ -68,7 +73,7 @@ export function SectionWrapper({
                             </p>
                         </div>
                     )}
-                    {children}
+                    <div className="relative">{children}</div>
                 </div>
 
                 {/* Right Gutter with Pattern */}

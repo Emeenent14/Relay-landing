@@ -6,8 +6,11 @@ import { ArrowRight, Terminal } from "lucide-react";
 export function CTASection() {
     return (
         <SectionWrapper label="Ready-made" labelColor="pink" showDivider={true}>
-            <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
-                <div className="max-w-screen-xl mx-auto">
+            <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8 relative">
+                {/* Subtle gradient background for light mode */}
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-50/50 to-gray-100/30 dark:via-transparent dark:to-transparent pointer-events-none" aria-hidden="true" />
+
+                <div className="max-w-screen-xl mx-auto relative">
                     {/* CTA Card */}
                     <div className="relative overflow-hidden rounded-3xl bg-gray-950 dark:bg-white/5 p-8 sm:p-12 lg:p-16">
                         {/* Background gradient */}

@@ -69,8 +69,10 @@ export function FeaturesSection() {
                         {features.map((feature, index) => (
                             <div
                                 key={index}
-                                className="bg-white dark:bg-gray-950 p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group"
+                                className="bg-white dark:bg-gray-950 p-8 hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group relative"
                             >
+                                {/* Subtle line texture on hover */}
+                                <div className="absolute inset-0 horizontal-lines opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" aria-hidden="true" />
                                 <div className={`w-12 h-12 rounded-xl ${feature.iconBg} flex items-center justify-center mb-6`}>
                                     <feature.icon className={`w-6 h-6 ${feature.iconColor}`} />
                                 </div>

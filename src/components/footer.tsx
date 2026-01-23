@@ -23,15 +23,20 @@ const footerLinks = {
 
 export function Footer() {
     return (
-        <footer className="border-t border-black/5 dark:border-white/10 bg-white dark:bg-gray-950">
+        <footer className="border-t border-black/5 dark:border-white/10 bg-white dark:bg-gray-950 relative">
+            {/* Subtle gradient fade at top */}
+            <div className="absolute inset-x-0 top-0 h-32 gradient-subtle-top pointer-events-none" aria-hidden="true" />
+
             {/* Main Footer Content */}
-            <div className="grid grid-cols-1 md:grid-cols-[var(--gutter-width,2.5rem)_minmax(0,1fr)_var(--gutter-width,2.5rem)]">
+            <div className="grid grid-cols-1 md:grid-cols-[var(--gutter-width,2.5rem)_minmax(0,1fr)_var(--gutter-width,2.5rem)] relative">
                 {/* Left Gutter */}
                 <div className="hidden md:block bg-pattern" />
 
                 {/* Content */}
-                <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-                    <div className="max-w-screen-xl mx-auto">
+                <div className="px-4 sm:px-6 lg:px-8 py-12 lg:py-16 relative">
+                    {/* Subtle texture */}
+                    <div className="absolute inset-0 texture-noise opacity-30 pointer-events-none" aria-hidden="true" />
+                    <div className="max-w-screen-xl mx-auto relative">
                         {/* Footer Grid */}
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
                             {/* Logo & Description */}

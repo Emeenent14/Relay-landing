@@ -28,9 +28,11 @@ export function ClientsSection() {
                         {clients.map((client, index) => (
                             <div
                                 key={index}
-                                className="bg-white dark:bg-gray-950 p-6 lg:p-8 flex items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group"
+                                className="bg-white dark:bg-gray-950 p-6 lg:p-8 flex items-center justify-center hover:bg-gray-50 dark:hover:bg-gray-900 transition-colors group relative"
                             >
-                                <div className="flex flex-col items-center gap-3">
+                                {/* Subtle dot texture on hover */}
+                                <div className="absolute inset-0 dot-pattern-fine opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" aria-hidden="true" />
+                                <div className="flex flex-col items-center gap-3 relative">
                                     {/* Logo placeholder */}
                                     <div className="w-12 h-12 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-lg font-bold text-gray-400 dark:text-gray-500 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors">
                                         {client.logo}

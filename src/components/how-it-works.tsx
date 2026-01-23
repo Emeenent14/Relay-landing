@@ -49,7 +49,7 @@ export function HowItWorksSection() {
                     {/* Steps - Horizontal on desktop, vertical on mobile */}
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
                         {steps.map((step, index) => (
-                            <div key={step.number} className="relative">
+                            <div key={step.number} className="relative group">
                                 {/* Connector line on desktop */}
                                 {index < steps.length - 1 && (
                                     <div className="hidden lg:block absolute top-10 left-[calc(100%+1rem)] w-[calc(100%-2rem)] h-px">

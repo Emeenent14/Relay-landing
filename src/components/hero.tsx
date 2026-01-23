@@ -5,7 +5,10 @@ import { Search } from "lucide-react";
 export function Hero() {
     return (
         <section className="relative pt-32 pb-16 lg:pt-40 lg:pb-24">
-            <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Subtle gradient overlay for light mode depth */}
+            <div className="absolute inset-0 gradient-radial-soft pointer-events-none" aria-hidden="true" />
+
+            <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 relative">
                 {/* Hero Content */}
                 <div className="max-w-4xl">
                     <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight text-gray-950 dark:text-white text-balance leading-[1.1]">

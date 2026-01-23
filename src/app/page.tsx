@@ -13,7 +13,10 @@ export default function Home() {
       <div className="hidden md:block bg-pattern fixed left-0 top-0 bottom-0 w-[var(--gutter-width,2.5rem)]" />
 
       {/* Main Content */}
-      <div className="col-start-1 md:col-start-2">
+      <div className="col-start-1 md:col-start-2 relative">
+        {/* Subtle dot texture overlay for light mode */}
+        <div className="absolute inset-0 dot-pattern pointer-events-none" aria-hidden="true" />
+
         <Header />
         <main className="relative">
           <Hero />
