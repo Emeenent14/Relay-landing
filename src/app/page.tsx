@@ -2,7 +2,10 @@ import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { ClientsSection } from "@/components/clients-section";
 import { FeaturesSection } from "@/components/features-section";
+import { ServerCatalogSection } from "@/components/server-catalog-section";
 import { HowItWorksSection } from "@/components/how-it-works";
+import { MCPExplainedSection } from "@/components/mcp-explained-section";
+import { FAQSection } from "@/components/faq-section";
 import { CTASection } from "@/components/cta-section";
 import { Footer } from "@/components/footer";
 
@@ -19,10 +22,28 @@ export default function Home() {
 
         <Header />
         <main className="relative">
+          {/* Hero - What is Relay */}
           <Hero />
+
+          {/* Supported Clients - Who uses it */}
           <ClientsSection />
+
+          {/* Features - What it does */}
           <FeaturesSection />
+
+          {/* Server Catalog - What servers are available */}
+          <ServerCatalogSection />
+
+          {/* How It Works - How to use it */}
           <HowItWorksSection />
+
+          {/* MCP Explained - For newcomers */}
+          <MCPExplainedSection />
+
+          {/* FAQ - Common questions */}
+          <FAQSection />
+
+          {/* Download CTA */}
           <CTASection />
         </main>
         <Footer />
