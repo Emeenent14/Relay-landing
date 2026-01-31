@@ -1,7 +1,13 @@
 import Link from "next/link";
 import { Github, Twitter, ExternalLink } from "lucide-react";
 
-const footerLinks = {
+interface FooterLink {
+    label: string;
+    href: string;
+    external?: boolean;
+}
+
+const footerLinks: Record<string, FooterLink[]> = {
     "Product": [
         { label: "Features", href: "#features" },
         { label: "Server Catalog", href: "#catalog" },
