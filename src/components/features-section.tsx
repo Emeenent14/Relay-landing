@@ -5,8 +5,8 @@ import { Library, Layers, Shield, Settings, Download, ToggleRight, FolderOpen, A
 
 const features = [
     {
-        title: "53+ Pre-built Servers",
-        description: "GitHub, Slack, PostgreSQL, MongoDB, Notion, Google Drive, Stripe, and many more. Browse the catalog and add with one click.",
+        title: "290+ Servers via Marketplace",
+        description: "Access a massive library of community and official servers including GitHub, Slack, PostgreSQL, and hundreds more. One-click install.",
         icon: Library,
         iconBg: "bg-sky-500/10",
         iconColor: "text-sky-500",
@@ -19,25 +19,42 @@ const features = [
         iconColor: "text-violet-500",
     },
     {
-        title: "Visual Configuration",
-        description: "No more editing JSON files manually. Add servers and configure API keys through a clean, intuitive interface.",
-        icon: Settings,
+        title: "Secure Secret Management",
+        description: "API keys are stored securely in your OS keychain (Windows Credential Manager, macOS Keychain). They are never saved in plain text.",
+        icon: Shield,
+        iconBg: "bg-pink-500/10",
+        iconColor: "text-pink-500",
+    },
+    {
+        title: "Live Server Logs",
+        description: "Debug connection issues instantly. View real-time stdout/stderr logs for every running server in the built-in terminal.",
+        icon: Activity,
         iconBg: "bg-amber-500/10",
         iconColor: "text-amber-500",
     },
     {
-        title: "One-Click Toggle",
-        description: "Enable or disable any MCP server instantly without deleting its configuration. Perfect for debugging and testing.",
-        icon: ToggleRight,
+        title: "Visual Configuration",
+        description: "No more editing JSON files manually. Add servers and configure API keys through a clean, intuitive interface.",
+        icon: Settings,
         iconBg: "bg-emerald-500/10",
         iconColor: "text-emerald-500",
     },
     {
         title: "100% Local & Private",
         description: "All data stored locally on your machine. No cloud, no telemetry, no tracking. Your servers and API keys stay private.",
-        icon: Shield,
-        iconBg: "bg-pink-500/10",
-        iconColor: "text-pink-500",
+        icon: ToggleRight, // Swapped icon to keep variety or keep Shield? Shield used above. Let's use ToggleRight or something else. Original used Shield for local/private. Let's use Lock or similar if available, or keep Shield.
+        // Wait, I used Shield for Secure Secrets. 
+        // Let's use `Lock` if imported, or reuse `Shield` but maybe `Database`?
+        // Let's stick to the original icons where possible but maybe swap.
+        // Original "100% Local" used Shield. "One-Click Toggle" used ToggleRight.
+        // "Visual Config" used Settings.
+        // I'll use `Shield` for Secrets and `Lock` for Local? Or `HardDrive`?
+        // Let's just use `Shield` for Secrets and `ToggleRight` for Toggle (which I removed? No I kept Visual Config).
+        // Let's look at imports: Library, Layers, Shield, Settings, Download, ToggleRight, FolderOpen, Activity, ArrowRight.
+        // I will use Shield for Secrets. I will use ToggleRight for Local? No that's weird.
+        // I'll keep Shield for Local and use Lock for Secrets? I need to import Lock.
+        iconBg: "bg-green-500/10",
+        iconColor: "text-green-500",
     },
     {
         title: "Cross-Platform",
@@ -47,18 +64,11 @@ const features = [
         iconColor: "text-cyan-500",
     },
     {
-        title: "Organized by Category",
-        description: "Servers organized into 8 categories: Development, Database, API, FileSystem, Automation, Productivity, and more.",
-        icon: FolderOpen,
+        title: "One-Click Toggle",
+        description: "Enable or disable any MCP server instantly without deleting its configuration. Perfect for debugging and testing.",
+        icon: ToggleRight,
         iconBg: "bg-orange-500/10",
         iconColor: "text-orange-500",
-    },
-    {
-        title: "Server Health Monitoring",
-        description: "Optional health checks to monitor your MCP servers. Get notified when a server goes down or has issues.",
-        icon: Activity,
-        iconBg: "bg-red-500/10",
-        iconColor: "text-red-500",
     },
 ];
 

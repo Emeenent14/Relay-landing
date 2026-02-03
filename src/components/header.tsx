@@ -6,6 +6,7 @@ import Link from "next/link";
 import { Moon, Sun, Menu, X, Github, Download } from "lucide-react";
 
 const navLinks = [
+    { href: "/docs", label: "Docs" },
     { href: "#features", label: "Features" },
     { href: "#catalog", label: "Servers" },
     { href: "#how-it-works", label: "How it Works" },
