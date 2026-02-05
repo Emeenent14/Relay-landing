@@ -20,6 +20,11 @@ export const metadata: Metadata = {
     siteName: "Relay",
     // images: [{ url: "/og-image.png", width: 1200, height: 630 }], // Add this later
   },
+  icons: {
+    icon: "/relay.png",
+    shortcut: "/relay.png",
+    apple: "/relay.png",
+  },
 };
 
 export default function RootLayout({
