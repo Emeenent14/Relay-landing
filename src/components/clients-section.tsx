@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
+import { ArrowRight } from "lucide-react";
 
 const ClientIcons = {
     Void: (props: any) => (
@@ -153,11 +154,16 @@ export function ClientsSection() {
                                 </div>
                             </div>
                         ))}
-                        {/* Request a client */}
-                        <a href="#" className="bg-gray-50 dark:bg-gray-900/30 p-6 flex flex-col items-center justify-center text-center hover:bg-gray-100 dark:hover:bg-gray-900 transition-colors group h-48">
-                            <span className="text-4xl mb-2 grayscale group-hover:grayscale-0 transition-all">✨</span>
-                            <span className="text-sm font-medium text-gray-950 dark:text-white">Request a client</span>
-                            <span className="text-xs text-gray-500 dark:text-gray-400">Coming soon</span>
+                    </div>
+
+                    {/* Request a client */}
+                    <div className="mt-12 text-center">
+                        <a
+                            href="#"
+                            className="inline-flex items-center gap-2 text-sm font-medium text-gray-950 dark:text-white hover:text-sky-500 dark:hover:text-sky-400 transition-colors"
+                        >
+                            Request a client
+                            <ArrowRight className="w-4 h-4" />
                         </a>
                     </div>
                 </div>
