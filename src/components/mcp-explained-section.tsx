@@ -5,36 +5,36 @@ import { Play, ExternalLink, BookOpen } from "lucide-react";
 
 const videos = [
     {
-        title: "What is MCP? Model Context Protocol Explained",
+        title: "Model Context Protocol Explained",
         creator: "Anthropic",
         thumbnail: "anthropic",
-        duration: "8:24",
-        url: "https://www.youtube.com/watch?v=kkdB3KL7aJU",
+        duration: "3:30",
+        url: "https://youtu.be/CQywdSdi5iA?si=ETGmWciGO6X7db35",
         description: "Official introduction to MCP from the creators at Anthropic."
     },
     {
-        title: "MCP: The Future of AI Tool Integration",
+        title: "What is MCP?",
+        creator: "IBM Technology",
+        thumbnail: "ibm",
+        duration: "6:45",
+        url: "https://youtu.be/eur8dUO9mvE?si=azzGiq1FMgMg9qTz",
+        description: "A clear explanation of how MCP connects AI to your data."
+    },
+    {
+        title: "The Future of AI Tool Integration",
         creator: "Fireship",
         thumbnail: "fireship",
         duration: "5:12",
-        url: "https://www.youtube.com/watch?v=pE9pnGvEONQ",
+        url: "https://youtu.be/HyzlYwjoXOQ?si=4YVwxcpQPUHC5pv1",
         description: "Quick, entertaining overview of MCP and why it matters."
     },
     {
-        title: "Building with MCP Servers",
-        creator: "AI Jason",
-        thumbnail: "aijason",
-        duration: "15:30",
-        url: "https://www.youtube.com/watch?v=bZom5VABaX8",
-        description: "Deep dive into setting up and using MCP servers."
-    },
-    {
-        title: "MCP Tutorial: Connect Claude to Everything",
-        creator: "Cole Medin",
-        thumbnail: "colemedin",
-        duration: "12:45",
-        url: "https://www.youtube.com/watch?v=Hf5VFfXfMnA",
-        description: "Step-by-step guide to connecting Claude with external tools."
+        title: "How to use MCP",
+        creator: "Network Chuck",
+        thumbnail: "networkchuck",
+        duration: "14:20",
+        url: "https://youtu.be/GuTcle5edjk?si=WK0xUX0bTj3-nFe2",
+        description: "Step-by-step guide to connecting AI to your real-world tools."
     },
 ];
 
@@ -123,7 +123,7 @@ export function MCPExplainedSection() {
                                         {/* YouTube icon */}
                                         <div className="absolute top-3 left-3">
                                             <svg className="w-8 h-8 text-red-600" viewBox="0 0 24 24" fill="currentColor">
-                                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                                             </svg>
                                         </div>
                                     </div>
