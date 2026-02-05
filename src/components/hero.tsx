@@ -1,6 +1,6 @@
 "use client";
 
-import { Download, Apple, Monitor } from "lucide-react";
+import { Download, Apple, Monitor, Github, Star } from "lucide-react";
 
 export function Hero() {
     return (
@@ -32,7 +32,7 @@ export function Hero() {
                     </p>
 
                     {/* CTA Buttons */}
-                    <div className="mt-10 flex flex-col sm:flex-row gap-4">
+                    <div className="mt-10 flex flex-col sm:flex-row gap-4 flex-wrap">
                         <a
                             href="https://github.com/emeenent14/Relay/releases/latest"
                             target="_blank"
@@ -43,10 +43,22 @@ export function Hero() {
                             Download for Free
                         </a>
                         <a
-                            href="#how-it-works"
-                            className="inline-flex items-center justify-center h-12 px-6 text-base font-medium text-gray-600 dark:text-gray-400 border border-gray-200 dark:border-gray-700 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+                            href="https://github.com/Emeenent14/relay"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center gap-2 h-12 px-6 text-base font-medium text-gray-950 dark:text-white border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 rounded-full hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors"
                         >
-                            See how it works
+                            <Github className="w-5 h-5" />
+                            View Source
+                        </a>
+                        <a
+                            href="https://github.com/Emeenent14/relay"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center gap-2 h-12 px-6 text-base font-medium text-amber-500 border border-amber-200 dark:border-amber-900/30 bg-amber-50 dark:bg-amber-950/30 rounded-full hover:bg-amber-100 dark:hover:bg-amber-900/50 transition-colors"
+                        >
+                            <Star className="w-5 h-5 fill-current" />
+                            Star on GitHub
                         </a>
                     </div>
 

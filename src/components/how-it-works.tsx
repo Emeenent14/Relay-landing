@@ -7,7 +7,7 @@ const steps = [
     {
         number: "01",
         title: "Browse the Catalog",
-        description: "Open Relay and explore 53+ pre-configured MCP servers. Filter by category—databases, APIs, productivity tools, and more.",
+        description: "Open Relay and explore 200+ pre-configured MCP servers. Filter by category—databases, APIs, productivity tools, and more.",
         icon: Search,
         color: "text-violet-500",
         bg: "bg-violet-500/10",

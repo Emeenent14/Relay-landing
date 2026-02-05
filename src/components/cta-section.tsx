@@ -59,37 +59,47 @@ export function CTASection() {
                                     </svg>
                                     Download for Linux
                                 </a>
-                            </div>
-
-                            {/* Additional Info */}
-                            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-400">
-                                <div className="flex items-center gap-2">
-                                    <Download className="w-4 h-4" />
-                                    <span>Free & Open Source</span>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                                    <span>Version 0.1.0</span>
-                                </div>
                                 <a
-                                    href="https://github.com"
+                                    href="https://github.com/Emeenent14/relay"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex items-center gap-2 hover:text-white transition-colors"
+                                    className="w-full sm:w-auto inline-flex items-center justify-center gap-3 h-14 px-8 text-base font-semibold text-white bg-white/10 rounded-full hover:bg-white/20 transition-colors border border-white/20"
                                 >
-                                    <Github className="w-4 h-4" />
-                                    <span>View on GitHub</span>
+                                    <Github className="w-5 h-5" />
+                                    View on GitHub
                                 </a>
                             </div>
                         </div>
 
-                        {/* Decorative elements */}
-                        <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-sky-500/30 rounded-full blur-3xl" />
-                        <div className="absolute -right-10 top-10 w-40 h-40 bg-pink-500/20 rounded-full blur-2xl" />
-                        <div className="absolute -left-20 top-20 w-60 h-60 bg-violet-500/20 rounded-full blur-3xl" />
+                        {/* Additional Info */}
+                        <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-gray-400">
+                            <div className="flex items-center gap-2">
+                                <Download className="w-4 h-4" />
+                                <span>Free & Open Source</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <span className="w-2 h-2 rounded-full bg-emerald-500" />
+                                <span>Version 0.1.0</span>
+                            </div>
+                            <a
+                                href="https://github.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex items-center gap-2 hover:text-white transition-colors"
+                            >
+                                <Github className="w-4 h-4" />
+                                <span>View on GitHub</span>
+                            </a>
+                        </div>
                     </div>
+
+                    {/* Decorative elements */}
+                    <div className="absolute -right-20 -bottom-20 w-80 h-80 bg-sky-500/30 rounded-full blur-3xl" />
+                    <div className="absolute -right-10 top-10 w-40 h-40 bg-pink-500/20 rounded-full blur-2xl" />
+                    <div className="absolute -left-20 top-20 w-60 h-60 bg-violet-500/20 rounded-full blur-3xl" />
                 </div>
             </div>
-        </SectionWrapper>
+        </div>
+        </SectionWrapper >
     );
 }
