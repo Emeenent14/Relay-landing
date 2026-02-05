@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { Github, Twitter, ExternalLink } from "lucide-react";
+import { Github, Twitter, ExternalLink, MessageCircle } from "lucide-react";
+import Image from "next/image";
 
 interface FooterLink {
     label: string;
@@ -21,10 +22,10 @@ const footerLinks: Record<string, FooterLink[]> = {
         { label: "MCP Docs", href: "https://modelcontextprotocol.io", external: true },
     ],
     "Community": [
-        { label: "GitHub", href: "https://github.com", external: true },
-        { label: "Discord", href: "#" },
-        { label: "Twitter / X", href: "https://twitter.com", external: true },
-        { label: "Report an Issue", href: "https://github.com", external: true },
+        { label: "GitHub", href: "https://github.com/Emeenent14/relay", external: true },
+        { label: "Discord", href: "https://discord.gg/pjA3ag9H", external: true },
+        { label: "Twitter / X", href: "https://x.com/relay_mcp", external: true },
+        { label: "Report an Issue", href: "https://github.com/Emeenent14/relay/issues", external: true },
     ],
 };
 
@@ -49,12 +50,13 @@ export function Footer() {
                             {/* Logo & Description */}
                             <div className="col-span-2 md:col-span-1">
                                 <div className="flex items-center gap-2 mb-4">
-                                    {/* Relay Logo */}
-                                    <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-sky-500 to-violet-500 flex items-center justify-center">
-                                        <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M12 5v14M5 12h14" />
-                                        </svg>
-                                    </div>
+                                    <Image
+                                        src="/relay.png"
+                                        alt="Relay Logo"
+                                        width={28}
+                                        height={28}
+                                        className="rounded-lg"
+                                    />
                                     <span className="text-base font-semibold text-gray-950 dark:text-white">Relay</span>
                                 </div>
                                 <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-4">
@@ -62,7 +64,7 @@ export function Footer() {
                                 </p>
                                 <div className="flex items-center gap-3">
                                     <a
-                                        href="https://github.com"
+                                        href="https://github.com/Emeenent14/relay"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-gray-400 hover:text-gray-950 dark:hover:text-white transition-colors"
@@ -70,12 +72,20 @@ export function Footer() {
                                         <Github className="w-5 h-5" />
                                     </a>
                                     <a
-                                        href="https://twitter.com"
+                                        href="https://x.com/relay_mcp"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="text-gray-400 hover:text-gray-950 dark:hover:text-white transition-colors"
                                     >
                                         <Twitter className="w-5 h-5" />
+                                    </a>
+                                    <a
+                                        href="https://discord.gg/pjA3ag9H"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-gray-400 hover:text-gray-950 dark:hover:text-white transition-colors"
+                                    >
+                                        <MessageCircle className="w-5 h-5" />
                                     </a>
                                 </div>
                             </div>
