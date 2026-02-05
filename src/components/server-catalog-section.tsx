@@ -55,7 +55,7 @@ export function ServerCatalogSection() {
                     {/* Section Header */}
                     <div className="max-w-3xl mb-16">
                         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-gray-950 dark:text-white mb-6">
-                            53+ servers ready to use
+                            200+ servers ready to use
                         </h2>
                         <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
                             Browse our curated catalog of pre-configured MCP servers. Each one comes with
