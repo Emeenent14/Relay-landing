@@ -93,7 +93,7 @@ const featuredServers = [
 
 export function ServerCatalogSection() {
     return (
-        <SectionWrapper label="Catalog" labelColor="violet" id="catalog">
+        <SectionWrapper label="Server Catalog" labelColor="emerald" id="catalog">
             <div className="py-16 lg:py-24 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-screen-xl mx-auto">
                     {/* Section Header */}
