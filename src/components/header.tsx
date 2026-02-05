@@ -64,7 +64,9 @@ export function Header() {
                     <div className="flex items-center gap-3">
                         {/* Download Button - Desktop */}
                         <a
-                            href="#download"
+                            href="https://github.com/emeenent14/Relay/releases/latest"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="hidden sm:inline-flex items-center gap-2 px-4 py-1.5 text-sm font-semibold text-white bg-gray-950 dark:bg-white dark:text-gray-950 rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
                         >
                             <Download className="w-4 h-4" />
@@ -115,7 +117,9 @@ export function Header() {
                             </Link>
                         ))}
                         <a
-                            href="#download"
+                            href="https://github.com/emeenent14/Relay/releases/latest"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             onClick={() => setMobileMenuOpen(false)}
                             className="mt-2 inline-flex items-center justify-center gap-2 px-4 py-3 text-sm font-semibold text-white bg-gray-950 dark:bg-white dark:text-gray-950 rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
                         >

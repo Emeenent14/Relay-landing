@@ -31,21 +31,27 @@ export function CTASection() {
                             {/* Download Buttons */}
                             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
                                 <a
-                                    href="#"
+                                    href="https://github.com/emeenent14/Relay/releases/latest"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="w-full sm:w-auto inline-flex items-center justify-center gap-3 h-14 px-8 text-base font-semibold text-gray-950 bg-white rounded-full hover:bg-gray-100 transition-colors"
                                 >
                                     <Monitor className="w-5 h-5" />
                                     Download for Windows
                                 </a>
                                 <a
-                                    href="#"
+                                    href="https://github.com/emeenent14/Relay/releases/latest"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="w-full sm:w-auto inline-flex items-center justify-center gap-3 h-14 px-8 text-base font-semibold text-white bg-white/10 rounded-full hover:bg-white/20 transition-colors border border-white/20"
                                 >
                                     <Apple className="w-5 h-5" />
                                     Download for macOS
                                 </a>
                                 <a
-                                    href="#"
+                                    href="https://github.com/emeenent14/Relay/releases/latest"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="w-full sm:w-auto inline-flex items-center justify-center gap-3 h-14 px-8 text-base font-semibold text-white bg-white/10 rounded-full hover:bg-white/20 transition-colors border border-white/20"
                                 >
                                     <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">

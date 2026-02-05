@@ -34,7 +34,9 @@ export function Hero() {
                     {/* CTA Buttons */}
                     <div className="mt-10 flex flex-col sm:flex-row gap-4">
                         <a
-                            href="#download"
+                            href="https://github.com/emeenent14/Relay/releases/latest"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="inline-flex items-center justify-center gap-2 h-12 px-6 text-base font-semibold text-white bg-gray-950 dark:bg-white dark:text-gray-950 rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
                         >
                             <Download className="w-5 h-5" />
