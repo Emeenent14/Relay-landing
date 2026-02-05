@@ -99,7 +99,6 @@ export function CTASection() {
                     <div className="absolute -left-20 top-20 w-60 h-60 bg-violet-500/20 rounded-full blur-3xl" />
                 </div>
             </div>
-        </div>
-        </SectionWrapper >
+        </SectionWrapper>
     );
 }
