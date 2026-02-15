@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { Plus, Play, Link as LinkIcon } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Quick Start - Relay Documentation",
@@ -21,15 +20,15 @@ export default function QuickStartPage() {
             <section>
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">1. Add a Server</h2>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    Let's start by adding the <strong>Brave Search</strong> server for web browsing capabilities.
+                    Let&apos;s start by adding the <strong>Brave Search</strong> server for web browsing capabilities.
                 </p>
                 <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-6">
                     <ol className="list-decimal list-inside space-y-4 text-gray-700 dark:text-gray-300">
                         <li>Open Relay and navigate to the <strong>Marketplace</strong> tab.</li>
-                        <li>Search for "Brave".</li>
+                        <li>Search for &quot;Brave&quot;.</li>
                         <li>Click <strong>Install</strong> on the <strong>Brave Search</strong> card.</li>
                         <li>
-                            You'll be prompted for a <code>BRAVE_API_KEY</code>.
+                            You&apos;ll be prompted for a <code>BRAVE_API_KEY</code>.
                             <br />
                             <span className="text-sm text-gray-500 ml-5">
                                 (Get a free key from <a href="https://brave.com/search/api/" target="_blank" className="text-sky-600 hover:underline">brave.com</a>)
@@ -43,13 +42,13 @@ export default function QuickStartPage() {
             <section>
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">2. Verify Connection</h2>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">
-                    Before connecting to Claude, let's make sure the server works within Relay.
+                    Before connecting to Claude, let&apos;s make sure the server works within Relay.
                 </p>
                 <div className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 rounded-lg p-6">
                     <ol className="list-decimal list-inside space-y-4 text-gray-700 dark:text-gray-300">
                         <li>Go to your <strong>Servers</strong> list.</li>
                         <li>Turn the toggle switch <strong>ON</strong>. Ideally, the dot should turn green.</li>
-                        <li>Click the <strong>Logs (Terminal)</strong> icon. You should see "Server initialized" or similar output.</li>
+                        <li>Click the <strong>Logs (Terminal)</strong> icon. You should see &quot;Server initialized&quot; or similar output.</li>
                     </ol>
                 </div>
             </section>
@@ -70,9 +69,9 @@ export default function QuickStartPage() {
             </section>
 
             <div className="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg p-6">
-                <h3 className="font-semibold text-green-800 dark:text-green-200 mb-2">🎉 Success!</h3>
+                <h3 className="font-semibold text-green-800 dark:text-green-200 mb-2">Success!</h3>
                 <p className="text-green-700 dark:text-green-300">
-                    Open Claude and ask: <em>"Search the web for the latest artificial intelligence news."</em>
+                    Open Claude and ask: <em>&quot;Search the web for the latest artificial intelligence news.&quot;</em>
                     <br />
                     You should see it use the <strong>brave-search</strong> tool!
                 </p>
