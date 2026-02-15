@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 import { Moon, Sun, Menu, X, Github, Download, Twitter } from "lucide-react";
@@ -18,12 +18,9 @@ const navLinks = [
 
 export function Header() {
     const { theme, setTheme } = useTheme();
-    const [mounted, setMounted] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-    useEffect(() => {
-        setMounted(true);
-    }, []);
+    const isThemeReady = typeof theme === "string";
+    const isDark = theme === "dark";
 
     return (
         <header className="fixed top-0 left-0 right-0 z-50 h-14 border-b border-black/5 dark:border-white/10 bg-white/95 dark:bg-gray-950/95 backdrop-blur-sm">
@@ -100,13 +97,13 @@ export function Header() {
                             <Github className="w-5 h-5" />
                         </Link>
 
-                        {mounted && (
+                        {isThemeReady && (
                             <button
-                                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                                onClick={() => setTheme(isDark ? "light" : "dark")}
                                 className="p-2 text-gray-500 hover:text-gray-950 dark:text-gray-400 dark:hover:text-white transition-colors"
                                 aria-label="Toggle theme"
                             >
-                                {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+                                {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
                             </button>
                         )}
 
