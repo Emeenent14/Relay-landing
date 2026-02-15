@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
-import { Download, Monitor, Apple, Terminal } from "lucide-react";
+import Link from "next/link";
+import { Monitor, Apple, Terminal } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Installation - Relay Documentation",
@@ -46,7 +47,7 @@ export default function InstallationPage() {
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Windows</h2>
                 <div className="bg-gray-50 dark:bg-gray-900/50 rounded-lg p-6 border border-gray-200 dark:border-gray-800">
                     <ol className="list-decimal list-inside space-y-3 text-gray-700 dark:text-gray-300">
-                        <li>Download the latest <code>.msi</code> installer from the <a href="/#download" className="text-sky-600 hover:underline">downloads page</a>.</li>
+                        <li>Download the latest <code>.msi</code> installer from the <Link href="/#download" className="text-sky-600 hover:underline">downloads page</Link>.</li>
                         <li>Double-click the installer to launch the setup wizard.</li>
                         <li>Follow the prompts to install Relay to your <code>AppData</code> folder.</li>
                         <li>Once installed, launch Relay from the Start menu.</li>
@@ -72,7 +73,7 @@ export default function InstallationPage() {
             </section>
 
             <div className="mt-8 p-4 bg-sky-50 dark:bg-sky-900/20 border border-sky-200 dark:border-sky-800 text-sky-800 dark:text-sky-200 rounded-lg">
-                <strong>Next Steps:</strong> Check out the <a href="/docs/quick-start" className="underline font-semibold">Quick Start guide</a> to configure your first server.
+                <strong>Next Steps:</strong> Check out the <Link href="/docs/quick-start" className="underline font-semibold">Quick Start guide</Link> to configure your first server.
             </div>
         </div>
     );
