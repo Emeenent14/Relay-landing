@@ -19,7 +19,7 @@ export default function TransportsPage() {
 
             <section className="prose prose-gray dark:prose-invert max-w-none">
                 <p>
-                    The Model Context Protocol (MCP) defines "transports" as the communication details for exchanging JSON-RPC messages between clients and servers. Relay currently supports the standard <strong>Stdio</strong> transport and validates <strong>SSE</strong> (Server-Sent Events).
+                    The Model Context Protocol (MCP) defines &quot;transports&quot; as the communication details for exchanging JSON-RPC messages between clients and servers. Relay currently supports the standard <strong>Stdio</strong> transport and validates <strong>SSE</strong> (Server-Sent Events).
                 </p>
 
                 <h3>1. Stdio (Standard Input/Output)</h3>
@@ -39,7 +39,7 @@ export default function TransportsPage() {
                 <ul>
                     <li><strong>Use Case</strong>: Connecting to a server running on a Docker container or a remote cloud instance.</li>
                     <li><strong>Configuration</strong>: Requires a URL (e.g., `http://localhost:8000/sse`).</li>
-                    <li><em>Note: SSE support in Relay's UI is currently in beta via the Inspector.</em></li>
+                    <li><em>Note: SSE support in Relay&apos;s UI is currently in beta via the Inspector.</em></li>
                 </ul>
             </section>
         </div>
