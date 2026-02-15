@@ -24,7 +24,7 @@ export default function SecurityPage() {
                     <div>
                         <h3 className="text-base font-semibold text-blue-900 dark:text-blue-100 m-0">Zero-Compromise Privacy</h3>
                         <p className="text-sm text-blue-700 dark:text-blue-300 m-0">
-                            Relay is a "Local First" app. We do not have servers, we do not track you, and we cannot see your API keys.
+                            Relay is a &quot;Local First&quot; app. We do not have servers, we do not track you, and we cannot see your API keys.
                         </p>
                     </div>
                 </div>
@@ -37,7 +37,7 @@ export default function SecurityPage() {
                     <strong>Secrets are handled differently than normal variables:</strong>
                 </p>
                 <ul>
-                    <li><strong>Storage</strong>: They are NOT stored in Relay's database or configuration files. Instead, they are saved directly to your operating system's native keychain (Windows Credential Manager, macOS Keychain).</li>
+                    <li><strong>Storage</strong>: They are NOT stored in Relay&apos;s database or configuration files. Instead, they are saved directly to your operating system&apos;s native keychain (Windows Credential Manager, macOS Keychain).</li>
                     <li><strong>Runtime</strong>: When you start a server, Relay retrieves the secret from the keychain in memory and injects it into the process environment.</li>
                     <li><strong>Export</strong>: When you export configurations to other clients (like Claude), secrets are NOT exported by default to prevent accidental leaks, unless the target client supports secure storage references.</li>
                 </ul>
