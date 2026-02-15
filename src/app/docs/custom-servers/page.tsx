@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { Plus } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Adding Custom Servers - Relay Documentation",
@@ -34,14 +33,14 @@ export default function CustomServersPage() {
                     <li>
                         A dialog will appear with empty fields. Fill them in:
                         <ul>
-                            <li><strong>Name</strong>: A display name (e.g., "My Python Script").</li>
+                            <li><strong>Name</strong>: A display name (e.g., &quot;My Python Script&quot;).</li>
                             <li><strong>Command</strong>: The executable (e.g., `python`, `uv`, `node`). <em>Must be in your system PATH or an absolute path.</em></li>
                             <li><strong>Arguments</strong>: The script path and any flags (e.g., `main.py`, `--verbose`). Enter one argument per line.</li>
                         </ul>
                     </li>
                     <li>
                         <strong>Environment Variables</strong>:
-                        Click "Add Var" to add API keys or configuration settings required by your script.
+                        Click &quot;Add Var&quot; to add API keys or configuration settings required by your script.
                     </li>
                     <li>
                         Click <strong>Create Server</strong>.
