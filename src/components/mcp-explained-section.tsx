@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { Play, ExternalLink, BookOpen } from "lucide-react";
 
@@ -112,9 +113,11 @@ export function MCPExplainedSection() {
                                     {/* Video Thumbnail */}
                                     <div className="relative aspect-video bg-gray-100 dark:bg-gray-800">
                                         {/* Thumbnail Image */}
-                                        <img
+                                        <Image
                                             src={`https://img.youtube.com/vi/${video.url.split("youtu.be/")[1].split("?")[0]}/maxresdefault.jpg`}
                                             alt={video.title}
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, 50vw"
                                             className="absolute inset-0 w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity"
                                         />
 
