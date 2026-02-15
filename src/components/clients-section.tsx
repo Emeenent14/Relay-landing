@@ -1,27 +1,30 @@
 "use client";
 
+import type { SVGProps } from "react";
 import Image from "next/image";
 import { SectionWrapper } from "@/components/ui/section-wrapper";
 import { ArrowRight } from "lucide-react";
 
+type IconProps = SVGProps<SVGSVGElement>;
+
 const ClientIcons = {
-    Void: (props: any) => (
+    Void: (props: IconProps) => (
         <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
             <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
         </svg>
     ),
-    FiveIre: (props: any) => (
+    FiveIre: (props: IconProps) => (
         <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
             <path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.011-.224-4.011s1.956 1.634 2.822 4.011c.5 1.38 2 2 2 3a2.5 2.5 0 00-2.5 2.5h-3.5z" />
             <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zm0-2a8 8 0 100-16 8 8 0 000 16z" />
         </svg>
     ),
-    Glama: (props: any) => (
+    Glama: (props: IconProps) => (
         <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
             <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
         </svg>
     ),
-    Msty: (props: any) => (
+    Msty: (props: IconProps) => (
         <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
         </svg>
