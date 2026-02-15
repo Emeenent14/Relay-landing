@@ -14,13 +14,13 @@ export default function DebuggingPage() {
                     Debugging
                 </h1>
                 <p className="text-lg text-gray-600 dark:text-gray-400">
-                    See what's happening under the hood.
+                    See what&apos;s happening under the hood.
                 </p>
             </div>
 
             <section className="prose prose-gray dark:prose-invert max-w-none">
                 <p>
-                    One of Relay's most powerful features is the built-in terminal for every server.
+                    One of Relay&apos;s most powerful features is the built-in terminal for every server.
                 </p>
 
                 <h3>Viewing Logs</h3>
@@ -50,7 +50,7 @@ export default function DebuggingPage() {
                     <ul className="list-disc list-inside text-sm text-amber-800 dark:text-amber-300 space-y-1">
                         <li><code>Module not found</code>: You need to install dependencies (npm install).</li>
                         <li><code>401 Unauthorized</code>: Your API key is missing or invalid. Check your environment variables.</li>
-                        <li><code>EADDRINUSE</code>: The server is trying to bind to a port that is already taken.</li>
+                        <li><code>EADDRINUSE</code>: The server is trying to bind to a port that&apos;s already taken.</li>
                     </ul>
                 </div>
             </section>
