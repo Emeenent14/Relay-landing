@@ -1,7 +1,7 @@
 "use client";
 
 import { SectionWrapper } from "@/components/ui/section-wrapper";
-import { Library, Layers, Shield, Settings, Download, ToggleRight, FolderOpen, Activity, ArrowRight } from "lucide-react";
+import { Library, Layers, Shield, Settings, Download, ToggleRight, Activity, ArrowRight } from "lucide-react";
 
 const features = [
     {
@@ -42,19 +42,9 @@ const features = [
     {
         title: "100% Local & Private",
         description: "All data stored locally on your machine. No cloud, no telemetry, no tracking. Your servers and API keys stay private.",
-        icon: ToggleRight, // Swapped icon to keep variety or keep Shield? Shield used above. Let's use ToggleRight or something else. Original used Shield for local/private. Let's use Lock or similar if available, or keep Shield.
-        // Wait, I used Shield for Secure Secrets. 
-        // Let's use `Lock` if imported, or reuse `Shield` but maybe `Database`?
-        // Let's stick to the original icons where possible but maybe swap.
-        // Original "100% Local" used Shield. "One-Click Toggle" used ToggleRight.
-        // "Visual Config" used Settings.
-        // I'll use `Shield` for Secrets and `Lock` for Local? Or `HardDrive`?
-        // Let's just use `Shield` for Secrets and `ToggleRight` for Toggle (which I removed? No I kept Visual Config).
-        // Let's look at imports: Library, Layers, Shield, Settings, Download, ToggleRight, FolderOpen, Activity, ArrowRight.
-        // I will use Shield for Secrets. I will use ToggleRight for Local? No that's weird.
-        // I'll keep Shield for Local and use Lock for Secrets? I need to import Lock.
         iconBg: "bg-green-500/10",
         iconColor: "text-green-500",
+        icon: Shield,
     },
     {
         title: "Cross-Platform",
